@@ -1,10 +1,3 @@
-from check_guess import check_guess
-
-guess = input("Guess: ")
-
-answer = "Austin Ekeler"
-
-if check_guess(guess, answer) == True:
-    print("Correct")
-else:
-    print("Incorrect")
+from pdf import pdfspeaker
+file = "F:\\users\\LBAR\\Committees\\MLS Data Improvement Advisory Group\\2023\Minutes\\November\\Minutes 11.29.2023.pdf"
+pdfspeaker(file)

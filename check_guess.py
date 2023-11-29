@@ -34,6 +34,10 @@ def check_guess(guess, answer):
         for character in range(sizeofguess):
             if answer[character] == guess[character]:
                 count+= 1
+            if answer[character] == guess[character + 1]:
+                count+= 1
+            if answer[character] == guess[character - 1]:
+                count+= 1
 
         if count >= (sizeofanswer * 0.8):
             return True
